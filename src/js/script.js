@@ -43,4 +43,14 @@ function compareVariables(var1, var2) {
     }
 }
 
+function fibonacci(number) {
+    let number1 = 0, number2 = 1, nextnumber;
+    let numbers = []
+    for (let i = 0; i < number; i++) {
+        numbers.push(number1)
+        nextnumber = number2 + number1;
+        number1 = number2
+        number2 = nextnumber
+    }
+}
 
